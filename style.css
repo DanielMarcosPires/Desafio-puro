@@ -1,0 +1,111 @@
+*{margin: 0;}
+#produtos{
+    max-width: 900px;
+    margin:0 auto;
+    display: flex; 
+    gap: 8px;
+}
+.icon{
+    position: relative;
+    z-index: 20;
+    font-size: 20px;
+}
+#produtos img{
+    width: 100%;
+    height: 300px;
+}
+#carrinho{
+    max-width: 900px;
+    margin:0 auto;
+    padding:0 2%;
+    display: block;     
+}
+
+.produto-single{
+    width:33.3%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.perfil{
+    width: 40px;
+}
+.carrinhoImg{
+    --valor:50px;
+    width: var(--valor);
+    height: var(--valor);
+}
+h2{
+    margin: 8px 0;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+input{
+    display: inline-block;
+    width: 300px;
+}
+.a{
+   
+    width: 400px!important;
+}
+
+input[type="checkbox"]{
+   width: 50px;
+}
+.check{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid: ". .";
+}
+.perfil{
+    position: relative;
+    z-index: 20;
+}
+.perfil:hover ~ .menu{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.menu:hover{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+    color: #fff;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding: 8px 0;
+}
+.menu a{
+    display: block;
+    color: #fff;
+
+}
+.pag{
+    position: relative;
+    left: 80px;
+}
+.formulario{
+    display: grid;
+    grid:
+    '. . .'
+    '. . .'
+    '. . .';
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+input{
+    width: 100%;
+}
